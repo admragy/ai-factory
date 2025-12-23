@@ -1,19 +1,44 @@
 {
   "name": "ai-factory-super",
   "version": "2.0.0",
-  "description": "Advanced Telegram bot with Genspark AI + Manus Max 1.6 capabilities",
+  "description": "Advanced Telegram bot with Genspark AI + Manus Max 1.6 capabilities - Accepts all text messages",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "setup": "node setup.js"
   },
-  "keywords": ["telegram-bot", "ai", "free-ai"],
+  "keywords": [
+    "telegram-bot",
+    "ai",
+    "gemini",
+    "genspark",
+    "manus",
+    "free-ai",
+    "chatbot"
+  ],
+  "author": "AI Factory",
   "license": "MIT",
   "dependencies": {
     "node-telegram-bot-api": "^0.66.0",
+    "@google/generative-ai": "^0.21.0",
     "express": "^4.19.2",
     "dotenv": "^16.4.5",
-    "axios": "^1.7.2",
-    "@google/generative-ai": "^0.15.0"
-  }
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/admragy/ai-factory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/admragy/ai-factory/issues"
+  },
+  "homepage": "https://github.com/admragy/ai-factory#readme"
 }
